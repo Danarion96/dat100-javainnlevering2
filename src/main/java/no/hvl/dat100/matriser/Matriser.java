@@ -4,9 +4,33 @@ public class Matriser {
 
 	// a)
 	public static void skrivUt(int[][] matrise) {
-		
-		// TODO
-		throw new UnsupportedOperationException("Metoden skrivUt ikke implementert");
+
+		int lengthMatrix = matrise.length;
+
+		System.out.print("[");
+		if (lengthMatrix == 0) {
+			System.out.println("]");
+		}
+
+        for (int i = 0; i < lengthMatrix; i++) {
+			int[] table = matrise[i];
+            int lengthTable = table.length;
+
+            System.out.print("[");
+            for (int j = 0; j < lengthTable; j++) {
+                if (j != (lengthTable - 1)) {
+                    System.out.print(table[j] + ", ");
+                } else {
+                    System.out.print(table[j] + "]");
+                }
+            }
+
+			if (i != (lengthMatrix - 1)) {
+				System.out.print(", ");
+			} else {
+				System.out.print("]");
+			}
+        }
 	}
 
 	// b)
