@@ -116,7 +116,7 @@ public class Matriser {
 			for (int j = 0; j < b[0].length; j++) {
 				int sum = 0;
 
-				// k: the row in b
+				// k: collumn in a / the row in b
 				for (int k = 0; k < b.length; k++) {
 					sum += a[i][k] * b[k][j]; // We take the sum of a[row a][row of b (corresponds to collumn in a)] * b[row b][collumn b]
 				}
